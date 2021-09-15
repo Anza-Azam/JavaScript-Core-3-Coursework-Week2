@@ -1,0 +1,23 @@
+
+.images{
+    border:10px solid red;
+    list-style: none; 
+}
+
+button
+
+{   
+   display: flex;
+    margin:auto;
+    width:100px;
+    height:50px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+img{
+
+width:100%;
+}
