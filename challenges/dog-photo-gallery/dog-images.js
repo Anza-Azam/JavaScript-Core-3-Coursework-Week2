@@ -11,7 +11,7 @@ function randomBreed() {
             li.appendChild(image)
             ul.appendChild(li)
        
-        })
+        }).catch(error=>console.log('connection failed, could not fetch dog image from website'))
 }
 
 generator.addEventListener('click', randomBreed);
