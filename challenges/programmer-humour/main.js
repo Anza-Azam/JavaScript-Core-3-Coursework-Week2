@@ -10,6 +10,6 @@ function randomFun () {
       renderImage.alt = data.alt
     })
 
-    .catch(error => console.log(error))
+    .catch(error => console.log('connection failed, could not get image from website'))
 }
 randomFun()
