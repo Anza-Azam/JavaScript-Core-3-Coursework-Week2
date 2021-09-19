@@ -1,23 +1,25 @@
-
-.images{
-    border:10px solid red;
-    list-style: none; 
+img {
+  border: 2px solid red;
+  width: 100px;
 }
 
-button
-
-{   
-   display: flex;
-    margin:auto;
-    width:100px;
-    height:50px;
-    background-color: black;
-    align-items: center;
-    justify-content: center;
-    color:white;
+.images {
+  list-style: none;
 }
 
-img{
+button {
+  display: flex;
+  margin: auto;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
-width:100%;
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
 }

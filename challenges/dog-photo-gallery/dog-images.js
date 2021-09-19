@@ -1,26 +1,17 @@
 const generator = document.getElementById('generator')
-const image = document.createElement('img')
-const li = document.getElementById('images')
 
-
-
-
-
+const ul = document.querySelector('.images')
 function randomBreed() {
     fetch('https://dog.ceo/api/breeds/image/random')
-        .then(function (response) {
-        
-            return response.json();
-        
-        }).then(function (random_image) {
-            image.src = (random_image.message)
+        .then(response=>response.json()).then(data =>{
+            const li = document.createElement('li')
+            const image = document.createElement("img");
+            image.src = (data.message)
             image.alt = 'adorable dogs'
             li.appendChild(image)
-    
-    
-        }).catch(error=> console.log('Connection Error'))
-
-
+            ul.appendChild(li)
+       
+        })
 }
 
 generator.addEventListener('click', randomBreed);
